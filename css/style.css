@@ -1,0 +1,69 @@
+/* reset */
+* {margin: 0; padding: 0;}
+a {color: #333333; text-decoration: none;}
+li {list-style: none;}
+table {border-spacing: 0;}
+.clearfix::before, .clearfix::after {content: ''; display: block; clear: both;}
+
+/* wrap */
+#wrap {width: 1200px; height: 700px; background: #ffffff; margin: 0 auto;}
+
+/* header */
+#header {width: 1200px; height: 100px; background: #b39ddb;}
+#header .logo {float: left; width: 200px; height: 100px; background: #fff;}
+#header .logo img {padding: 30px;}
+#header .nav {float: right; width: 500px; margin-top: 28px; margin-right: 20px; background: #9575cd;}
+#header .nav li {position: relative; float: left; width: 25%; text-align: center; background: #fff;}
+#header .nav li a {padding: 10px; font-size: 20px; display: block;}
+#header .nav li a:hover {background: rgba(0,0,0,0.0); color: #22ff00; text-decoration: underline;}
+#header .nav li ul.submenu {display: none; position: absolute; left: 0; top: 44px; background: #fff; z-index: 100;}
+#header .nav li ul.submenu li {width: 100%;}
+#header .nav li ul.submenu li a {font-size: 16px;}
+
+/* banner */
+#banner {width: 1200px; height: 300px; background: #fff; overflow: hidden;}
+
+/* slider */
+.slideList {position: relative; width: 1200px; height: 300px;}
+.slideList .slideImg {position: relative;}
+.slideList .slideImg h2 {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); padding: 10px 30px; background: rgba(255,255,255,0.5);}
+.slideList .slideImg img {display: block;}
+
+/* contents */
+#contents {}
+#contents > div {}
+#contents > div.cont1 {float: left; width: 400px; height: 200px; background: #fff;}
+#contents > div.cont2 {float: left; width: 400px; height: 200px; background: #fff;}
+#contents > div.cont2 h3 {padding: 10px 30px; position: absolute; background: rgba(255,255,255,0.5);}
+#contents > div.cont3 {float: left; width: 400px; height: 200px; background: #fff;}
+#contents > div.cont3 h3 {padding: 10px 30px; position: absolute; background: rgba(255,255,255,0.5);}
+
+/* tab-menu */
+.tab-menu {padding: 10px;}
+.tab-menu .tab-btn ul {overflow: hidden;}
+.tab-menu .tab-btn li {float: left; width: 180px; text-align: center; background: #fff; border: 1px solid #000;}
+.tab-menu .tab-btn li a {padding: 10px; color: #000; display: block;} 
+.tab-menu .tab-btn li a:hover {background: rgba(0,0,0,0.0); text-decoration: underline; color: #22ff00;}
+.tab-menu .tab-cont {padding: 20px; text-align: left; background: #fff; border: 1px solid #000;}
+.tab-menu .tab-cont li a {font-size: 13px;}
+.tab-menu .tab-cont li a:hover {background: rgba(0,0,0,0.0); text-decoration: underline; color: #22ff00;}
+
+/* footer */
+#footer {}
+#footer .foot1 {float: left; width: 200px; height: 100px; background: #fff;}
+#footer .foot2 {float: left; width: 800px; height: 100px; background: #fff;}
+#footer .foot2 h3 {text-align: center; font-size: 18px; padding: 20px;}
+#footer .foot3 {float: left; width: 200px; height: 100px; background: #fff;}
+#footer .foot3 img {width: 30px; padding: 10px;}
+
+/* layer */
+.layer {
+    display: none;
+    width: 600px; height: 300px; background: #fff;
+    border: 1px solid #000;
+    position: absolute; left: 36%; top: 40%; z-index: 1000;
+    margin-top: -250px; margin-right: -250px;
+}
+.layer h2 {color: #000; text-align: center;}
+.layer li a {font-size: 13px; text-align: center; padding: 10px; display: block; margin-top: 50px;}
+.layer .close {position: absolute; bottom: 20px; right: 20px;}
